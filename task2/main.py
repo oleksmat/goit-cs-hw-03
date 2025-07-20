@@ -56,8 +56,6 @@ if __name__ == "__main__":
     try:
         cats_collection = connect_to_db()
 
-        seed_db(cats_collection)
-
         print("Connected to MongoDB successfully!")
     except ConnectionFailure:
         print("Failed to connect to MongoDB")
